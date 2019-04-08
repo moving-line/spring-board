@@ -9,7 +9,7 @@ public class TVUser {
 		AbstractApplicationContext factory = new GenericXmlApplicationContext("applicationContext.xml");
 		
 		// 2. 스프링 컨테이너로부터 필요한 객체를 요청한다.
-		TV tv = (TV) factory.getBean("tv");
+		TV tv = (TV) factory.getBean("TV");
 		
 		tv.powerOn();
 		tv.volumeDown();
