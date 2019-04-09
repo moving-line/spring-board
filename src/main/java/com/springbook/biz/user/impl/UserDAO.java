@@ -4,10 +4,12 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+import org.springframework.stereotype.Repository;
+
 import com.springbook.biz.common.JDBCUtil;
 import com.springbook.biz.user.UserVO;
 
-// 어노테이션 대신 xml등록 
+@Repository
 public class UserDAO {
 	//JDB 관련 변수
 	private Connection conn = null;

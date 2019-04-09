@@ -9,12 +9,12 @@ public class UserServiceClient {
 		AbstractApplicationContext container = new GenericXmlApplicationContext("applicationContext.xml");
 		
 		// 2. Spring 컨테이너로부터 UserService 객체를 Lookup한다.
-		UserService userService = (UserService) container.getBean("userService");
+		UserService userService = (UserService) container.getBean("userServiceImpl");
 		
 		// 3. 로그인 기능 기능 테스트 
 		UserVO vo = new UserVO();
-		vo.setId("test");
-		vo.setPassword("test123");
+		vo.setId("user1");
+		vo.setPassword("user1");
 		
 		UserVO user = userService.getUser(vo);
 		if (user != null) {
