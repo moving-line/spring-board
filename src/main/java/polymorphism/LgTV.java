@@ -27,5 +27,4 @@ public class LgTV implements TV{
 	public void volumeDown() {
 		speaker.volumeDown();
 	}
-
 }
