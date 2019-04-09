@@ -9,13 +9,4 @@
 	http://www.springframework.org/schema/context/spring-context-4.2.xsd">
 	
 	<context:component-scan base-package="com.springbook.biz"></context:component-scan>
-	<bean class="polymorphism.SonySpeaker"></bean>
-	<bean id="collectionBean" class="com.springbook.ioc.injection.CollectionBean">
-		<property name="addressList">
-			<list>
-				<value>서울시 강남구 역삼동</value>
-				<value>서울시 도봉구 창동</value>
-			</list>
-		</property>
-	</bean>
 </beans>

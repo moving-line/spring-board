@@ -5,8 +5,6 @@ import java.util.List;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
-import polymorphism.TV;
-
 public class BoardServiceClient {
 	public static void main(String[] args) {
 		// 1. Spring 컨테이너를 구동한다.
